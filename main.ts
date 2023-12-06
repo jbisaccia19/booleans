@@ -1,9 +1,12 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     left = !(left)
 })
+function testFunction () {
+    left = false
+}
 let projectile: Sprite = null
 let left = false
-left = false
+testFunction()
 game.onUpdateInterval(500, function () {
     if (left) {
         projectile = sprites.createProjectile(img`
